@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Lind Agency | Life Insurance in GA, NC, SC, TX &amp; VA</title>
+<meta name="description" content="The Lind Agency helps families protect today and build a brighter tomorrow with life insurance, mortgage protection, final expense, children's whole life and retirement solutions. Licensed in GA, NC, SC, TX and VA.">
+<link rel="canonical" href="https://lindagency.com/">
+<meta property="og:title" content="The Lind Agency | Protection Today, Brighter Tomorrow">
+<meta property="og:description" content="Life insurance and family protection from licensed broker Sterrick Lind. Health insurance coverage for families coming soon.">
+<meta property="og:url" content="https://lindagency.com/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://lindagency.com/images/sterrick.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23131a36'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-weight='700' fill='%23c49a2c' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;0,900;1,700;1,800&family=Open+Sans:wght@400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#131a36;
+    --navy-2:#1c2550;
+    --gold:#c49a2c;
+    --gold-2:#a8811d;
+    --gold-soft:#e8d7a6;
+    --cream:#f4efe4;
+    --cream-2:#ebe4d3;
+    --ink:#1a1a1a;
+    --muted:#5d5a52;
+    --white:#ffffff;
+    --radius:14px;
+    --shadow:0 18px 40px -18px rgba(19,26,54,.35);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Open Sans',system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+  .serif{font-family:'Playfair Display',Georgia,serif}
+  .script{font-family:'Great Vibes',cursive;font-weight:400}
+  .eyebrow{font-size:.78rem;letter-spacing:.35em;text-transform:uppercase;color:var(--gold);font-weight:700}
+  .brush{height:4px;width:120px;border-radius:50%;background:linear-gradient(90deg,var(--gold),var(--gold-2) 70%,transparent);margin:18px 0}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:999px;font-weight:700;text-decoration:none;transition:transform .2s, box-shadow .2s, background .2s;border:2px solid transparent;cursor:pointer;font-size:1rem}
+  .btn-gold{background:var(--gold);color:var(--navy)}
+  .btn-gold:hover{background:#d4aa3c;transform:translateY(-2px);box-shadow:var(--shadow)}
+  .btn-outline{border-color:var(--navy);color:var(--navy)}
+  .btn-outline:hover{background:var(--navy);color:var(--cream)}
+  .btn-outline-light{border-color:var(--gold);color:var(--gold-soft)}
+  .btn-outline-light:hover{background:var(--gold);color:var(--navy)}
+
+  /* Header */
+  header{position:sticky;top:0;z-index:50;background:rgba(244,239,228,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(19,26,54,.08)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+  .logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+  .logo-mark{width:42px;height:42px;border-radius:10px;background:var(--navy);color:var(--gold);display:grid;place-items:center;font-family:'Playfair Display',serif;font-weight:900;font-size:1.4rem}
+  .logo-text{font-family:'Playfair Display',serif;font-weight:800;color:var(--navy);font-size:1.25rem;line-height:1}
+  .logo-text small{display:block;font-family:'Open Sans',sans-serif;font-size:.62rem;letter-spacing:.3em;color:var(--gold);font-weight:700;margin-top:4px}
+  .nav-links{display:flex;gap:28px;align-items:center;list-style:none}
+  .nav-links a{text-decoration:none;font-weight:600;color:var(--navy);font-size:.95rem}
+  .nav-links a:hover{color:var(--gold-2)}
+  .nav-links .btn{padding:10px 20px;font-size:.9rem}
+  .menu-btn{display:none;background:none;border:0;cursor:pointer;padding:8px}
+  .menu-btn span{display:block;width:26px;height:2px;background:var(--navy);margin:6px 0;transition:.3s}
+
+  /* Hero */
+  .hero{position:relative;overflow:hidden;padding:70px 0 0}
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:end}
+  .hero h1{font-family:'Playfair Display',serif;font-weight:900;color:var(--navy);font-size:clamp(2.6rem,6vw,4.6rem);line-height:1;letter-spacing:-.01em;text-transform:uppercase}
+  .hero h1 em{display:block;text-transform:none;font-style:italic;font-weight:800;color:var(--gold);margin-top:8px}
+  .hero .lead{font-size:1.12rem;color:var(--muted);max-width:540px;margin-bottom:28px}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px}
+  .hero-facts{display:flex;flex-wrap:wrap;gap:22px;padding-bottom:60px}
+  .fact{display:flex;align-items:center;gap:12px}
+  .fact-ic{width:42px;height:42px;border-radius:50%;background:var(--navy);display:grid;place-items:center;flex-shrink:0}
+  .fact-ic svg{width:20px;height:20px;stroke:var(--gold);fill:none;stroke-width:1.8}
+  .fact b{display:block;color:var(--navy);font-size:.95rem}
+  .fact span{font-size:.82rem;color:var(--muted)}
+  .hero-art{position:relative;align-self:stretch;min-height:560px;display:flex;align-items:flex-end;justify-content:center}
+  .hero-shape{position:absolute;inset:40px -12vw 0 6%;background:var(--navy);border-radius:220px 0 0 0;overflow:hidden}
+  .hero-shape::before{content:"";position:absolute;width:70%;height:75%;left:-20%;bottom:-12%;background:var(--gold);border-radius:50% 50% 0 0;transform:rotate(-14deg);opacity:.95}
+  .hero-shape::after{content:"";position:absolute;width:40%;height:55%;right:4%;top:-14%;background:var(--navy-2);border-radius:40%;transform:rotate(25deg)}
+  .hero-frame{position:relative;z-index:2;width:min(330px,70%);aspect-ratio:2/3;margin:0 0 -1px 6%;border-radius:200px 200px 0 0;overflow:hidden;border:6px solid var(--gold);border-bottom:0;box-shadow:0 30px 60px -20px rgba(0,0,0,.5);background:var(--navy-2)}
+  .hero-frame img{width:100%;height:100%;object-fit:cover;object-position:center top}
+  .hero-card{position:absolute;z-index:3;left:0;bottom:70px;background:var(--cream);border-radius:14px;padding:14px 18px 14px 14px;display:flex;gap:12px;align-items:center;box-shadow:var(--shadow);border-left:4px solid var(--gold)}
+  .hero-card .fact-ic{width:38px;height:38px}
+  .hero-card b{display:block;color:var(--navy);font-size:.92rem;line-height:1.2}
+  .hero-card span{font-size:.78rem;color:var(--muted)}
+  .hero-tag{position:absolute;top:56px;right:2%;z-index:3;color:var(--cream);font-size:1.7rem;line-height:1.15;transform:rotate(-6deg)}
+  .hero-tag::after{content:"";display:block;height:3px;width:120px;margin-top:8px;background:var(--gold);border-radius:50%}
+
+  /* Services bar */
+  .services-bar{background:var(--navy);position:relative;z-index:4}
+  .services-grid{display:grid;grid-template-columns:repeat(6,1fr)}
+  .svc{padding:30px 14px;text-align:center;color:var(--white);border-right:1px solid rgba(196,154,44,.25);text-decoration:none;transition:background .25s}
+  .svc:last-child{border-right:0}
+  .svc:hover{background:var(--navy-2)}
+  .svc-ic{width:72px;height:72px;margin:0 auto 14px;border-radius:50%;background:var(--gold);border:3px solid var(--gold-soft);box-shadow:0 0 0 4px var(--navy) inset;display:grid;place-items:center}
+  .svc-ic svg{width:34px;height:34px;stroke:var(--white);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+  .svc b{font-size:.98rem;line-height:1.3;display:block}
+
+  /* Sections */
+  section{padding:96px 0}
+  .section-head{max-width:720px;margin-bottom:52px}
+  .section-head.center{margin-inline:auto;text-align:center}
+  .section-head.center .brush{margin-inline:auto}
+  .section-head h2{font-family:'Playfair Display',serif;font-weight:800;color:var(--navy);font-size:clamp(2rem,4vw,3rem);line-height:1.1;margin-top:10px}
+  .section-head h2 em{color:var(--gold);font-style:italic}
+  .section-head p{color:var(--muted);font-size:1.05rem}
+
+  /* Coverage cards */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .card{background:var(--white);border-radius:var(--radius);padding:32px;box-shadow:0 1px 0 rgba(19,26,54,.06);border-top:4px solid var(--gold);transition:transform .25s, box-shadow .25s}
+  .card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+  .card .svc-ic{margin:0 0 18px;width:60px;height:60px}
+  .card .svc-ic svg{width:28px;height:28px}
+  .card h3{font-family:'Playfair Display',serif;color:var(--navy);font-size:1.4rem;margin-bottom:10px}
+  .card p{color:var(--muted);font-size:.97rem;margin-bottom:14px}
+  .card ul{list-style:none;font-size:.92rem}
+  .card li{padding-left:22px;position:relative;margin-bottom:6px}
+  .card li::before{content:"";position:absolute;left:0;top:9px;width:10px;height:2px;background:var(--gold)}
+
+  /* Coming soon */
+  .soon{background:var(--navy);color:var(--cream);position:relative;overflow:hidden}
+  .soon::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:var(--gold);opacity:.12;right:-160px;top:-180px}
+  .soon::after{content:"";position:absolute;width:300px;height:300px;border-radius:50%;border:2px solid rgba(196,154,44,.35);left:-120px;bottom:-140px}
+  .soon-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:60px;align-items:center;position:relative;z-index:1}
+  .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(196,154,44,.15);border:1px solid var(--gold);color:var(--gold-soft);padding:6px 16px;border-radius:999px;font-size:.78rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase}
+  .badge i{width:8px;height:8px;border-radius:50%;background:var(--gold);animation:pulse 1.8s infinite}
+  @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.5)}}
+  .soon h2{font-family:'Playfair Display',serif;font-weight:800;font-size:clamp(2rem,4.2vw,3.2rem);line-height:1.1;margin:18px 0}
+  .soon h2 em{color:var(--gold);font-style:italic}
+  .soon p{color:#cfcbbf;font-size:1.05rem;margin-bottom:26px;max-width:560px}
+  .soon-list{display:grid;gap:14px}
+  .soon-item{display:flex;gap:16px;align-items:flex-start;background:rgba(255,255,255,.04);border:1px solid rgba(196,154,44,.25);border-radius:12px;padding:18px 20px}
+  .soon-item .num{font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--gold);font-weight:800;line-height:1}
+  .soon-item b{display:block;color:var(--white)}
+  .soon-item span{font-size:.9rem;color:#bdb8aa}
+
+  /* About */
+  .about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:center}
+  .about-photo{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:4/5;background:var(--navy);border:6px solid var(--white);box-shadow:var(--shadow)}
+    .about-photo img{width:100%;height:100%;object-fit:cover;object-position:center 20%}
+  .about-solo{grid-template-columns:1fr;max-width:820px;text-align:center}
+  .about-solo .brush{margin-inline:auto}
+  .about-solo .creds{max-width:560px;margin-inline:auto;text-align:left}
+  .about h2{font-family:'Playfair Display',serif;font-weight:900;color:var(--navy);font-size:clamp(2rem,4vw,3rem);line-height:1;text-transform:uppercase}
+  .about .role{font-size:.9rem;letter-spacing:.4em;color:var(--gold);font-weight:700;text-transform:uppercase;margin-top:10px}
+  .about p{color:var(--muted);margin-bottom:16px;font-size:1.03rem}
+  .creds{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:26px 0}
+  .cred{background:var(--white);border-radius:12px;padding:16px 18px;border-left:4px solid var(--gold)}
+  .cred span{font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);font-weight:700}
+  .cred b{display:block;color:var(--navy);font-size:1.05rem}
+
+  /* Process */
+  .process{background:var(--cream-2)}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:step}
+  .step{position:relative;padding:28px 24px;background:var(--white);border-radius:var(--radius)}
+  .step::before{counter-increment:step;content:"0" counter(step);font-family:'Playfair Display',serif;font-weight:900;font-size:2.6rem;color:var(--gold);line-height:1;display:block;margin-bottom:12px}
+  .step h3{color:var(--navy);font-size:1.1rem;margin-bottom:6px}
+  .step p{color:var(--muted);font-size:.93rem}
+
+  /* Carriers */
+  .carriers{padding:60px 0;background:var(--white);border-block:1px solid rgba(19,26,54,.08)}
+  .carriers p.eyebrow{text-align:center;margin-bottom:24px}
+  .carrier-list{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 14px}
+  .carrier-list span{padding:10px 18px;border:1px solid var(--cream-2);border-radius:999px;font-weight:600;color:var(--navy);font-size:.92rem;background:var(--cream)}
+
+  /* Contact */
+  .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:start}
+  .contact-info{background:var(--navy);color:var(--cream);border-radius:var(--radius);padding:40px;position:relative;overflow:hidden}
+  .contact-info::after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;background:var(--gold);opacity:.15;right:-90px;bottom:-90px}
+  .contact-info h3{font-family:'Playfair Display',serif;font-size:1.9rem;margin-bottom:8px}
+  .contact-info h3 em{color:var(--gold)}
+  .contact-info > p{color:#cfcbbf;margin-bottom:28px}
+  .ci{display:flex;gap:14px;align-items:center;margin-bottom:18px;position:relative;z-index:1}
+  .ci .fact-ic{background:var(--gold)}
+  .ci .fact-ic svg{stroke:var(--navy)}
+  .ci a,.ci div{color:var(--cream);text-decoration:none;font-size:1rem}
+  .ci small{display:block;color:var(--gold-soft);font-size:.72rem;letter-spacing:.15em;text-transform:uppercase}
+  form{background:var(--white);border-radius:var(--radius);padding:40px;box-shadow:var(--shadow)}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .field{margin-bottom:18px;display:flex;flex-direction:column}
+  label{font-size:.85rem;font-weight:700;color:var(--navy);margin-bottom:6px}
+  label .req{color:var(--gold-2)}
+  input,select,textarea{font:inherit;padding:13px 14px;border:1.5px solid #ddd6c6;border-radius:10px;background:var(--cream);color:var(--ink);transition:border .2s, box-shadow .2s;width:100%}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(196,154,44,.2);background:var(--white)}
+  textarea{min-height:120px;resize:vertical}
+  fieldset{border:0;margin-bottom:18px}
+  legend{font-size:.85rem;font-weight:700;color:var(--navy);margin-bottom:10px}
+  .checks{display:grid;grid-template-columns:repeat(2,1fr);gap:8px 16px}
+  .checks label{display:flex;gap:10px;align-items:center;font-weight:600;font-size:.9rem;color:var(--ink);margin:0;cursor:pointer}
+  .checks input{width:18px;height:18px;accent-color:var(--gold-2)}
+  .consent{display:flex;gap:10px;align-items:flex-start;font-size:.82rem;color:var(--muted);margin-bottom:22px;font-weight:400}
+  .consent input{width:18px;height:18px;margin-top:3px;flex-shrink:0;accent-color:var(--gold-2)}
+  form .btn{width:100%;justify-content:center;font-size:1.05rem}
+  .form-status{margin-top:16px;padding:14px 16px;border-radius:10px;font-weight:600;display:none}
+  .form-status.ok{display:block;background:#e9f5ec;color:#1e6b34;border:1px solid #b7dcc1}
+  .form-status.err{display:block;background:#fbecea;color:#8a2a1c;border:1px solid #efc2bb}
+  .hp{position:absolute;left:-9999px}
+
+  /* Footer */
+  footer{background:#0d1228;color:#a9a597;padding:60px 0 30px;font-size:.9rem}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:40px}
+  footer .logo-text{color:var(--cream)}
+  footer h4{color:var(--gold);font-size:.78rem;letter-spacing:.25em;text-transform:uppercase;margin-bottom:14px}
+  footer ul{list-style:none}
+  footer li{margin-bottom:8px}
+  footer a{text-decoration:none}
+  footer a:hover{color:var(--gold)}
+  .disclaimer{border-top:1px solid rgba(255,255,255,.08);padding-top:24px;font-size:.78rem;line-height:1.7;color:#7f7c72}
+
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease, transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  @media (max-width:1000px){
+    .services-grid{grid-template-columns:repeat(3,1fr)}
+    .svc:nth-child(3){border-right:0}
+    .svc:nth-child(-n+3){border-bottom:1px solid rgba(196,154,44,.25)}
+    .cards{grid-template-columns:repeat(2,1fr)}
+    .steps{grid-template-columns:repeat(2,1fr)}
+  }
+  @media (max-width:860px){
+    .nav-links{position:fixed;top:74px;left:0;right:0;background:var(--cream);flex-direction:column;padding:24px;gap:18px;border-bottom:1px solid rgba(19,26,54,.1);transform:translateY(-140%);transition:transform .35s}
+    .nav-links.open{transform:none}
+    .menu-btn{display:block}
+    .hero{padding-top:40px}
+    .hero-grid,.soon-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+    .hero-art{min-height:420px;margin-inline:-16px}
+    .hero-shape{inset:60px 0 0 0;border-radius:160px 160px 0 0}
+    .hero-frame{margin-left:0;width:min(320px,74%)}
+    .hero-tag{display:none}
+    .hero-card{left:16px;bottom:30px}
+    .hero-facts{padding-bottom:10px}
+    .about-photo{max-width:420px}
+    .foot-grid{grid-template-columns:1fr}
+  }
+  @media (max-width:560px){
+    section{padding:70px 0}
+    .services-grid{grid-template-columns:repeat(2,1fr)}
+    .svc{border-right:1px solid rgba(196,154,44,.25)!important;border-bottom:1px solid rgba(196,154,44,.25)}
+    .svc:nth-child(2n){border-right:0!important}
+    .cards,.steps,.row,.checks,.creds{grid-template-columns:1fr}
+    form,.contact-info{padding:28px 22px}
+  }
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="logo" aria-label="The Lind Agency home">
+      <div class="logo-mark">L</div>
+      <div class="logo-text">The Lind Agency<small>LIFE &amp; FAMILY PROTECTION</small></div>
+    </a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false" id="menuBtn"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#coverage">Coverage</a></li>
+      <li><a href="#health">Health Insurance</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#process">How It Works</a></li>
+      <li><a href="#contact" class="btn btn-gold">Get a Free Quote</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero" style="padding-bottom:0">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">The Lind Agency</p>
+        <h1>We're Here to Help <em>You and Your Family!</em></h1>
+        <div class="brush" style="width:60%"></div>
+        <p class="lead">Life insurance built around the people you love. We compare top-rated carriers to find coverage that fits your budget, protects your home, and secures your family's future.</p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-gold">Get My Free Quote →</a>
+          <a href="tel:+15712146228" class="btn btn-outline">Call (571) 214-6228</a>
+        </div>
+        <div class="hero-facts">
+          <div class="fact">
+            <div class="fact-ic"><svg viewBox="0 0 24 24"><path d="M12 2l3 6 6 .9-4.5 4.4 1 6.2L12 16.8 6.5 19.5l1-6.2L3 8.9 9 8z"/></svg></div>
+            <div><b>Licensed in 5 States</b><span>GA · NC · SC · TX · VA</span></div>
+          </div>
+          <div class="fact">
+            <div class="fact-ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M6 16c.8-1.5 2-2 3-2s2.2.5 3 2M14 10h4M14 13h4"/></svg></div>
+            <div><b>NPN #938618</b><span>National Producer Number</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-shape" aria-hidden="true"></div>
+        <div class="hero-tag script" aria-hidden="true">Protection Today<br>Brighter Tomorrow</div>
+        <div class="hero-frame">
+          <img src="images/sterrick.jpg" alt="Sterrick Lind, founder of The Lind Agency" width="1000" height="1498">
+        </div>
+        <div class="hero-card">
+          <div class="fact-ic"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <div><b>Sterrick Lind</b><span>Founder &amp; Licensed Broker</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES BAR -->
+  <div class="services-bar">
+    <div class="wrap services-grid">
+      <a class="svc" href="#coverage"><div class="svc-ic"><svg viewBox="0 0 24 24"><circle cx="7" cy="6" r="2"/><circle cx="12" cy="5" r="2.2"/><circle cx="17" cy="6" r="2"/><path d="M4 20v-6a3 3 0 0 1 3-3M20 20v-6a3 3 0 0 0-3-3M9 20v-7a3 3 0 0 1 6 0v7"/></svg></div><b>Life<br>Insurance</b></a>
+      <a class="svc" href="#coverage"><div class="svc-ic"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7M5 9.5V20h7"/><path d="M17 12l4 1.5V17c0 2-1.8 3.4-4 4-2.2-.6-4-2-4-4v-3.5z"/><path d="M15.5 16.5l1 1 2-2"/></svg></div><b>Mortgage<br>Protection</b></a>
+      <a class="svc" href="#coverage"><div class="svc-ic"><svg viewBox="0 0 24 24"><circle cx="6.5" cy="5" r="2"/><circle cx="17.5" cy="5" r="2"/><circle cx="12" cy="11" r="1.6"/><path d="M4 21v-8a2.5 2.5 0 0 1 5 0v8M15 21v-8a2.5 2.5 0 0 1 5 0v8M10.5 21v-4a1.5 1.5 0 0 1 3 0v4"/></svg></div><b>Children's<br>Whole Life</b></a>
+      <a class="svc" href="#coverage"><div class="svc-ic"><svg viewBox="0 0 24 24"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h6"/><path d="M14 3l4 4v3M14 3v4h4M8 9h5M8 12h4M8 15h3"/><path d="M17 13l4 1.5V17c0 2-1.8 3.4-4 4-2.2-.6-4-2-4-4v-2.5z"/></svg></div><b>Final<br>Expense</b></a>
+      <a class="svc" href="#coverage"><div class="svc-ic"><svg viewBox="0 0 24 24"><path d="M12 12V7M12 9c0-3 2-5 5-5 0 3-2 5-5 5zM12 10c0-2.5-1.7-4.2-4.2-4.2 0 2.5 1.7 4.2 4.2 4.2z"/><path d="M3 15h3l4 1.5h4a1.5 1.5 0 0 1 0 3H9M14 18l5-2.5a1.6 1.6 0 0 1 2 2.4L15 21H7l-4-1"/></svg></div><b>Debt Free<br>Life</b></a>
+      <a class="svc" href="#coverage"><div class="svc-ic"><svg viewBox="0 0 24 24"><circle cx="10" cy="4" r="2"/><path d="M10 7v6l-2 8M10 13l3 3 1 5M10 9l-3 3M10 9l3 2h3"/><path d="M17 11v10"/></svg></div><b>Retirement<br>Solutions</b></a>
+    </div>
+  </div>
+
+  <!-- COVERAGE -->
+  <section id="coverage">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Coverage Options</p>
+        <h2>Protection for every <em>season of life.</em></h2>
+        <div class="brush"></div>
+        <p>Whether you're starting a family, buying a home, or planning for retirement, we'll walk you through options in plain language and shop multiple carriers so you don't have to.</p>
+      </div>
+      <div class="cards">
+        <article class="card reveal">
+          <div class="svc-ic"><svg viewBox="0 0 24 24"><circle cx="7" cy="6" r="2"/><circle cx="12" cy="5" r="2.2"/><circle cx="17" cy="6" r="2"/><path d="M4 20v-6a3 3 0 0 1 3-3M20 20v-6a3 3 0 0 0-3-3M9 20v-7a3 3 0 0 1 6 0v7"/></svg></div>
+          <h3>Life Insurance</h3>
+          <p>Term, whole, and indexed universal life options that replace income and keep your family's plans on track.</p>
+          <ul><li>Term &amp; permanent policies</li><li>Living benefits options</li><li>No-exam plans available</li></ul>
+        </article>
+        <article class="card reveal">
+          <div class="svc-ic"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7M5 9.5V20h7"/><path d="M17 12l4 1.5V17c0 2-1.8 3.4-4 4-2.2-.6-4-2-4-4v-3.5z"/></svg></div>
+          <h3>Mortgage Protection</h3>
+          <p>Coverage designed to pay off or keep up with your mortgage so your family can stay in the home you built.</p>
+          <ul><li>Matches your loan term</li><li>Return-of-premium options</li><li>Disability &amp; illness riders</li></ul>
+        </article>
+        <article class="card reveal">
+          <div class="svc-ic"><svg viewBox="0 0 24 24"><circle cx="6.5" cy="5" r="2"/><circle cx="17.5" cy="5" r="2"/><path d="M4 21v-8a2.5 2.5 0 0 1 5 0v8M15 21v-8a2.5 2.5 0 0 1 5 0v8"/></svg></div>
+          <h3>Children's Whole Life</h3>
+          <p>Lock in low rates for your kids, guarantee their future insurability, and build cash value as they grow.</p>
+          <ul><li>Lifetime coverage</li><li>Guaranteed cash value growth</li><li>Affordable monthly premiums</li></ul>
+        </article>
+        <article class="card reveal">
+          <div class="svc-ic"><svg viewBox="0 0 24 24"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h6M14 3l4 4v3M14 3v4h4M8 9h5M8 12h4"/></svg></div>
+          <h3>Final Expense</h3>
+          <p>Simple whole life coverage that handles funeral and end-of-life costs so loved ones aren't left with the bill.</p>
+          <ul><li>Simplified underwriting</li><li>Coverage for ages 50–85</li><li>Premiums that never increase</li></ul>
+        </article>
+        <article class="card reveal">
+          <div class="svc-ic"><svg viewBox="0 0 24 24"><path d="M12 12V7M12 9c0-3 2-5 5-5 0 3-2 5-5 5z"/><path d="M3 15h3l4 1.5h4a1.5 1.5 0 0 1 0 3H9M14 18l5-2.5a1.6 1.6 0 0 1 2 2.4L15 21H7l-4-1"/></svg></div>
+          <h3>Debt Free Life</h3>
+          <p>A strategy that pairs life insurance with a payoff plan to help you eliminate debt and build wealth faster.</p>
+          <ul><li>Personalized payoff plan</li><li>Protection while you pay down</li><li>Redirect savings to wealth</li></ul>
+        </article>
+        <article class="card reveal">
+          <div class="svc-ic"><svg viewBox="0 0 24 24"><circle cx="10" cy="4" r="2"/><path d="M10 7v6l-2 8M10 13l3 3 1 5M10 9l-3 3M17 11v10"/></svg></div>
+          <h3>Retirement Solutions</h3>
+          <p>Fixed and indexed annuities plus cash-value strategies to help create income you can't outlive.</p>
+          <ul><li>Fixed &amp; indexed annuities</li><li>401(k) &amp; IRA rollovers</li><li>Principal protection options</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMING SOON: HEALTH -->
+  <section class="soon" id="health">
+    <div class="wrap soon-grid">
+      <div class="reveal">
+        <span class="badge"><i></i> Coming Soon</span>
+        <h2>Health Insurance Coverage <em>for the Whole Family</em></h2>
+        <p>The Lind Agency is expanding to help families find affordable health coverage with the same personal, side-by-side guidance you get for life insurance. Join the early list and you'll be the first to know when enrollment help opens.</p>
+        <a href="#contact" class="btn btn-gold" data-interest="health">Join the Early List →</a>
+      </div>
+      <div class="soon-list reveal">
+        <div class="soon-item"><div class="num">01</div><div><b>Individual &amp; Family Plans</b><span>Coverage options for parents, children and dependents.</span></div></div>
+        <div class="soon-item"><div class="num">02</div><div><b>Marketplace Guidance</b><span>Help understanding plans, networks and eligibility for savings.</span></div></div>
+        <div class="soon-item"><div class="num">03</div><div><b>Supplemental Coverage</b><span>Dental, vision, accident and critical illness options.</span></div></div>
+        <div class="soon-item"><div class="num">04</div><div><b>One Agent, Total Protection</b><span>Life and health coverage reviewed together in one conversation.</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="wrap about-grid about-solo">
+      <div class="reveal">
+        <p class="eyebrow">Meet Your Agent</p>
+        <h2 style="margin-top:10px">Sterrick Lind</h2>
+        <p class="role">Insurance Broker</p>
+        <div class="brush"></div>
+        <p>I started The Lind Agency with one goal: make sure hardworking families have a plan in place before life happens. Too many people are underinsured or have never had someone sit down and explain their options clearly.</p>
+        <p>As an independent broker, I work for you, not one insurance company. I compare plans from many top-rated carriers and recommend what truly fits your needs and your budget.</p>
+        <div class="creds">
+          <div class="cred"><span>Licensed In</span><b>GA, NC, SC, TX, VA</b></div>
+          <div class="cred"><span>National Producer #</span><b>938618</b></div>
+        </div>
+        <a href="#contact" class="btn btn-gold">Let's Talk About Your Family →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <p class="eyebrow">How It Works</p>
+        <h2>Simple, personal and <em>no pressure.</em></h2>
+        <div class="brush"></div>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><h3>Reach Out</h3><p>Fill out the form or call. It takes less than two minutes.</p></div>
+        <div class="step reveal"><h3>Free Consultation</h3><p>We talk about your family, goals and budget by phone or video.</p></div>
+        <div class="step reveal"><h3>Compare Options</h3><p>We shop multiple carriers and explain each option in plain language.</p></div>
+        <div class="step reveal"><h3>Get Protected</h3><p>Apply with confidence. We stay with you for reviews as life changes.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARRIERS -->
+  <div class="carriers">
+    <div class="wrap">
+      <p class="eyebrow">Carriers We Work With</p>
+      <div class="carrier-list">
+        <span>Americo</span><span>American-Amicable</span><span>Mutual of Omaha</span><span>Foresters Financial</span><span>SBLI</span><span>AIG</span><span>F&amp;G</span><span>John Hancock</span><span>United Home Life</span><span>National Life Group</span><span>Gerber Life</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's protect what <em>matters most.</em></h2>
+        <div class="brush"></div>
+        <p>Tell me a little about what you're looking for and we'll reach out personally, usually within one business day.</p>
+      </div>
+      <div class="contact-grid">
+        <aside class="contact-info reveal">
+          <h3>The <em>Lind</em> Agency</h3>
+          <p>Prefer to talk now? Call or email anytime.</p>
+          <div class="ci">
+            <div class="fact-ic"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></div>
+            <div><small>Phone</small><a href="tel:+15712146228">(571) 214-6228</a></div>
+          </div>
+          <div class="ci">
+            <div class="fact-ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+            <div><small>Email</small><a href="mailto:thelindagency@gmail.com">thelindagency@gmail.com</a></div>
+          </div>
+          <div class="ci">
+            <div class="fact-ic"><svg viewBox="0 0 24 24"><path d="M12 2l3 6 6 .9-4.5 4.4 1 6.2L12 16.8 6.5 19.5l1-6.2L3 8.9 9 8z"/></svg></div>
+            <div><small>Licensed In</small><div>GA, NC, SC, TX, VA</div></div>
+          </div>
+          <div class="ci">
+            <div class="fact-ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M14 10h4M14 13h4"/></svg></div>
+            <div><small>National Producer #</small><div>938618</div></div>
+          </div>
+        </aside>
+
+        <!-- Formspree form: mjyynkzg -->
+        <form id="contactForm" class="reveal" action="https://formspree.io/f/mjyynkzg" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="New website inquiry - The Lind Agency">
+          <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="row">
+            <div class="field"><label for="firstName">First Name <span class="req">*</span></label><input id="firstName" name="first_name" required autocomplete="given-name"></div>
+            <div class="field"><label for="lastName">Last Name <span class="req">*</span></label><input id="lastName" name="last_name" required autocomplete="family-name"></div>
+          </div>
+          <div class="row">
+            <div class="field"><label for="email">Email <span class="req">*</span></label><input id="email" type="email" name="email" required autocomplete="email"></div>
+            <div class="field"><label for="phone">Phone <span class="req">*</span></label><input id="phone" type="tel" name="phone" required autocomplete="tel" placeholder="(555) 555-5555"></div>
+          </div>
+          <div class="row">
+            <div class="field"><label for="state">State <span class="req">*</span></label>
+              <select id="state" name="state" required>
+                <option value="">Select your state</option>
+                <option>Georgia</option><option>North Carolina</option><option>South Carolina</option><option>Texas</option><option>Virginia</option><option>Other</option>
+              </select>
+            </div>
+            <div class="field"><label for="contactTime">Best Time to Reach You</label>
+              <select id="contactTime" name="best_time">
+                <option>Anytime</option><option>Morning (9am–12pm)</option><option>Afternoon (12pm–5pm)</option><option>Evening (5pm–8pm)</option>
+              </select>
+            </div>
+          </div>
+          <fieldset>
+            <legend>I'm interested in:</legend>
+            <div class="checks">
+              <label><input type="checkbox" name="interest" value="Life Insurance"> Life Insurance</label>
+              <label><input type="checkbox" name="interest" value="Mortgage Protection"> Mortgage Protection</label>
+              <label><input type="checkbox" name="interest" value="Children's Whole Life"> Children's Whole Life</label>
+              <label><input type="checkbox" name="interest" value="Final Expense"> Final Expense</label>
+              <label><input type="checkbox" name="interest" value="Debt Free Life"> Debt Free Life</label>
+              <label><input type="checkbox" name="interest" value="Retirement Solutions"> Retirement Solutions</label>
+              <label><input type="checkbox" name="interest" value="Family Health Insurance (Coming Soon)" id="healthCheck"> Family Health Insurance <em style="color:var(--gold-2);font-style:normal;font-size:.75rem">(soon)</em></label>
+            </div>
+          </fieldset>
+          <div class="field"><label for="message">How can we help?</label><textarea id="message" name="message" placeholder="Tell me about your family, coverage goals, or questions..."></textarea></div>
+          <label class="consent"><input type="checkbox" name="consent" value="Yes" required> <span>By submitting, I agree to be contacted by The Lind Agency by phone, text, or email about insurance products. Consent is not a condition of purchase. Message and data rates may apply.</span></label>
+          <button type="submit" class="btn btn-gold" id="submitBtn">Request My Free Consultation</button>
+          <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="#top" class="logo" style="margin-bottom:16px"><div class="logo-mark">L</div><div class="logo-text">The Lind Agency<small>LIFE &amp; FAMILY PROTECTION</small></div></a>
+        <p style="max-width:340px">Protection today, brighter tomorrow. Independent life insurance guidance for families across GA, NC, SC, TX and VA.</p>
+      </div>
+      <div>
+        <h4>Coverage</h4>
+        <ul><li><a href="#coverage">Life Insurance</a></li><li><a href="#coverage">Mortgage Protection</a></li><li><a href="#coverage">Final Expense</a></li><li><a href="#coverage">Retirement Solutions</a></li><li><a href="#health">Health Insurance (Soon)</a></li></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul><li><a href="tel:+15712146228">(571) 214-6228</a></li><li><a href="mailto:thelindagency@gmail.com">thelindagency@gmail.com</a></li><li>Sterrick Lind · NPN #938618</li></ul>
+      </div>
+    </div>
+    <div class="disclaimer">
+      <p>&copy; <span id="year"></span> The Lind Agency. All rights reserved. Sterrick Lind is a licensed insurance agent in Georgia, North Carolina, South Carolina, Texas and Virginia (NPN #938618). Insurance products are offered through licensed carriers; coverage, rates and availability vary by state, age, health and carrier underwriting. Carrier names are shown for informational purposes and do not imply endorsement. Information on this site is not a guarantee of coverage or eligibility. Health insurance services are not yet offered and will be announced when available.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Mobile menu
+  const menuBtn = document.getElementById('menuBtn'), navLinks = document.getElementById('navLinks');
+  menuBtn.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open);
+  });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { navLinks.classList.remove('open'); menuBtn.setAttribute('aria-expanded', false); }));
+
+  // "Join the early list" pre-checks health interest
+  document.querySelectorAll('[data-interest="health"]').forEach(b => b.addEventListener('click', () => {
+    document.getElementById('healthCheck').checked = true;
+  }));
+
+  // Scroll reveal
+  const io = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Formspree AJAX submit
+  const form = document.getElementById('contactForm'), status = document.getElementById('formStatus'), btn = document.getElementById('submitBtn');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    status.className = 'form-status';
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+    btn.disabled = true; btn.textContent = 'Sending...';
+    const data = new FormData(form);
+    const interests = data.getAll('interest');
+    data.delete('interest');
+    data.append('interests', interests.length ? interests.join(', ') : 'Not specified');
+    try {
+      const res = await fetch(form.action, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } });
+      if (res.ok) {
+        form.reset();
+        status.textContent = 'Thank you! Your request was received. Sterrick will contact you within one business day.';
+        status.classList.add('ok');
+      } else {
+        throw new Error();
+      }
+    } catch {
+      status.innerHTML = 'Sorry, something went wrong. Please call <a href="tel:+15712146228">(571) 214-6228</a> or email <a href="mailto:thelindagency@gmail.com">thelindagency@gmail.com</a>.';
+      status.classList.add('err');
+    } finally {
+      btn.disabled = false; btn.textContent = 'Request My Free Consultation';
+    }
+  });
+</script>
+</body>
+</html>
